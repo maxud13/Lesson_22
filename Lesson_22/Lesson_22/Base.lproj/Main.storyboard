@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="SendNotificationButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFK-41-YHF">
+                                <rect key="frame" x="107" y="597" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MHA-IA-1Ks"/>
+                                </constraints>
+                                <state key="normal" title="SendNotificationButton"/>
+                                <connections>
+                                    <action selector="SendNotificationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J6O-MQ-S7b"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBx-e5-PPT">
+                                <rect key="frame" x="0.0" y="263" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="U40-h5-9la"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="530744400.97487003">
+                                    <!--2017-10-26 21:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AFK-41-YHF" secondAttribute="bottom" constant="40" id="0yd-em-jcV"/>
+                            <constraint firstItem="gBx-e5-PPT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2zJ-4L-LUK"/>
+                            <constraint firstItem="gBx-e5-PPT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Bz-bL-jlZ"/>
+                            <constraint firstItem="AFK-41-YHF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VXa-Lu-8Rz"/>
+                            <constraint firstItem="gBx-e5-PPT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kSa-gq-rWc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="gBx-e5-PPT" id="AFo-vw-X2J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
